@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="w-full h-full absolute bg-gradient-to-r from-blue-400 to-emerald-400 app-container">
       <Navbar>
-        <h1 className="text-xl font-bold -z-10">
+        <h1 className="text-xl font-bold my-20">
           Hello world!
         </h1>
       </Navbar>
