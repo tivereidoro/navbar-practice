@@ -29,12 +29,12 @@ export default function Nav({ children }) {
                         </span>
                     </div>
 
-                    <div onClick={() => setOpen(!open)} className='text-center text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+                    <div onClick={() => setOpen(!open)} className='text-center font-semibold text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                         {/* <ion-icon name=></ion-icon> */}
                         {open ? <X /> : <List />}
                     </div>
 
-                    <ul className={`font-[Poppins] z-40 md:flex md:items-center items-center md:pb-0 pb-8 absolute md:static bg-white md:z-40 z-[-1] left-0 w-full md:w-auto md:pl-0 border-t-4 border-indigo-500 transition-all duration-500 ease-in ${open ? 'top-15' : 'top-[-490px]'}`}>
+                    <ul className={`font-[Poppins] z-40 md:flex md:items-center items-center md:pb-0 pb-8 absolute md:static bg-white md:z-40 z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${open ? 'top-15' : 'top-[-490px]'}`}>
                         {
                             Links.map((link) => (
                                 <li key={link.name} className='text-center md:ml-8 text-xl md:my-0 my-7'>
