@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "../assets/logo.png";
 
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
     return (
         <div>
             <header className="flex justify-between items-center text-black py-6 px-8 md:px-32 bg-gray-400 drop-shadow-md">
